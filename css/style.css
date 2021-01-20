@@ -48,12 +48,12 @@ main {
 /* Upper Section */
 .jumbotron {
   height: 40%;
-  margin-bottom: 25px;
+  margin-bottom: 45px;
   position: relative;
 }
 
 img, .overlay {
-  border-radius: 5%;
+  border-radius: 15px;
 }
 
 .jumbotron img {
@@ -67,7 +67,7 @@ img, .overlay {
 
 .overlay {
   position: absolute;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.2);
   top: 0;
   right: 0;
   bottom: 0;
@@ -84,40 +84,44 @@ img, .overlay {
   z-index: 2;
 }
 
-/* Lower Section */
-.column-box {
-  background-color: #0064ff;
-}
 
+
+
+/* Lower Section */
 /* Banner Box */
-.banner {
-  height: 30px;
-  background-color: #19e9ff;
+.banner h2 {
+  font-size: 35px;
 }
 
 /* Three-Column Box */
-.row {
+.row img {
+  display: block;
   margin: 0 auto;
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
+  padding-bottom: 15px;
+  position: relative;
 }
 
 .column-1,
 .column-3 {
-  width: 20%;
-  height: 200px;
-  margin: 1% 1.5%;
+  width: 24%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .column-2 {
   width: 50%;
-  height: 200px;
-  margin: 1% 1.5%;
+  margin: 0 1%;
 }
 
 .column-1,
 .column-2,
 .column-3 {
   float: left;
-  background-color: #19e9ff;
+  background-color: #fff;
+  position: relative;
 }
 
 /* Footer */
