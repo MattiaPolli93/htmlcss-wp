@@ -29,7 +29,7 @@ header img {
   height: 60%;
 }
 
-.menù {
+header ul {
   padding-top: 20px;
 }
 
@@ -47,9 +47,41 @@ main {
 
 /* Upper Section */
 .jumbotron {
-  background-color: #cdaa32;
-  height: 400px;
+  height: 40%;
   margin-bottom: 25px;
+  position: relative;
+}
+
+img, .overlay {
+  border-radius: 5%;
+}
+
+.jumbotron img {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(0,0,0,0.5);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.jumbotron-text {
+  width: 50%;
+  color: #fff;
+  position: absolute;
+  left: 5%;
+  bottom: 20%;
+  z-index: 2;
 }
 
 /* Lower Section */
