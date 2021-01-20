@@ -97,6 +97,10 @@ img,
   font-size: 35px;
 }
 
+.banner p {
+  color: #929292;
+}
+
 /* Three-Column Box */
 .row img {
   position: relative;
