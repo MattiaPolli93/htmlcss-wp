@@ -15,7 +15,7 @@ body {
 }
 
 .main-box {
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -23,6 +23,7 @@ body {
 header {
   height: 100px;
   padding-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 header img {
@@ -42,7 +43,7 @@ header li {
 
 /* Main Body */
 main {
-  margin: 25px auto 6px auto;
+  margin: 0 auto;
 }
 
 /* Upper Section */
@@ -53,7 +54,8 @@ main {
 }
 
 img,
-.overlay {
+.overlay,
+.image-box {
   border-radius: 15px;
 }
 
@@ -97,24 +99,25 @@ img,
 
 /* Three-Column Box */
 .row img {
+  position: relative;
   display: block;
   margin: 0 auto;
   height: 80%;
   width: 100%;
   object-fit: cover;
+  object-position: 50% 50%;
   padding-bottom: 15px;
-  position: relative;
 }
 
 .column-1,
 .column-3 {
-  width: 24%;
+  width: 15%;
   margin: auto 0;
 }
 
 .column-2 {
-  width: 45%;
-  margin: 0 3.5%;
+  width: 66%;
+  margin: 0 2%;
 }
 
 .column-1,
@@ -129,8 +132,29 @@ img,
   margin-bottom: 15px;
 }
 
-.row h4 {
+.left {
+  background-image: url(../img/img-1.jpg);
+}
+
+.centre {
+  background-image: url(../img/banner-2.jpg);
+}
+
+.right {
+  background-image: url(../img/img-6.jpg);
+}
+
+.left,
+.centre,
+.right {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.row h4,
+.row p {
   margin-bottom: 10px;
+  color: #929292;
 }
 
 /* Footer */
